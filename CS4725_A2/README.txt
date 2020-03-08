@@ -1,0 +1,9 @@
+A modiﬁed version of the famous Missionaries and Cannibals problem.
+
+Description:
+    • We begin with m missionaries and c cannibals (and a boat) on the left side of a river, where m and c are speciﬁed as part of the initial state. (m and c are not necessarily equal.)
+    • The goal is to get all people to the right side of the river safely.
+    • In this version of the problem, the boat can hold up to three people at a time. At each step, 1, 2 or 3 people can row the boat from its current side to the other side.
+    • At no time can the number of cannibals exceed the number of missionaries in any one place (the left side of the river, the right side of the river or the boat), unless the number of missionaries in that place is zero. This means that it is not possible to have 1 missionary and 2 cannibals on the boat, and so the only permitted combinations of m + c on the boat are 3 + 0, 2 + 1, 0 + 3, 2 + 0, 1 + 1, 0 + 2, 1 + 0 and 0+1. (Of course, in any given state, some of these actions should be disallowed since they would result in cannibals outnumbering missionaries in some location. Also, an action like moving 3 missionaries should be disallowed if the current state does not even include 3 missionaries on that side of the river.)
+    • Note: We will assume that whenever the boat goes from one side of the river to the other, everyone must get oﬀ the boat ﬁrst before they decide who will take the boat back to the other side.
+    • For example, with an initial state involving 2 missionaries and 2 cannibals, an optimal solution would involve the following sequence of boat passengers: 2m + 1c → , ← 1m , 1m + 1c →.

@@ -1,0 +1,1 @@
+To create a magic square, we must ﬁnd a way to put the digits 1-9 in a 3×3 grid so that each digit appears exactly once, and so that the sums of every row, every column and every diagonal are equal.
